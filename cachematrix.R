@@ -36,7 +36,7 @@ cacheSolve <- function(iMatrixCache, ...) {
         return(inverted)
     }
     
-    inverted <- solve(iMatrixCache$getMatrix())
+    inverted <- solve(iMatrixCache$getMatrix(), ...)
     iMatrixCache$setInverse(inverted)
     return(inverted)
 }
